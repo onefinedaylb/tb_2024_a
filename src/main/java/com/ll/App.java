@@ -15,7 +15,14 @@ class App {
             if(cmd.equals("종료")){
                 break;
             }
-            System.out.printf("입력받은 명령 : %s\n", cmd);
+            else if(cmd.equals("등록")){
+                System.out.print("명언 : ");
+                String content = scanner.nextLine();
+                System.out.print("작가 : ");
+                String authorName = scanner.nextLine();
+
+                System.out.printf("명언 : %s, 작가 : %s\n", content, authorName);
+            }
         }
 
     }
