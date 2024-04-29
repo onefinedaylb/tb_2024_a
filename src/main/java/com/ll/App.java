@@ -22,7 +22,12 @@ class App {
 
                 System.out.print("작가 : ");
                 String authorName = scanner.nextLine();
+
                 lastQuotationId++;
+
+                int id = lastQuotationId;
+
+                Quotation quotation = new Quotation(id, content, authorName);
 
                 System.out.printf("%d번 명언이 등록되었습니다.\n", lastQuotationId);
             }
